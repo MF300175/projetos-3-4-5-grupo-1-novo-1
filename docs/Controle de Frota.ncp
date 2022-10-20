@@ -1,0 +1,112 @@
+<Project>
+  <Name>Controle de Frota</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Frota</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Carro</Name>
+        <Access>Public</Access>
+        <Location left="213" top="444" />
+        <Size width="197" height="119" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void NewMethod()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Veiculo</Name>
+        <Access>Public</Access>
+        <Location left="559" top="51" />
+        <Size width="277" height="272" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">String placa</Member>
+        <Member type="Field">int tanque</Member>
+        <Member type="Field">double kmPorLitro</Member>
+        <Member type="Field">double valorDeVenda</Member>
+        <Member type="Field">Arraylist&lt;Rota&gt; rotas</Member>
+        <Member type="Method">protected void addRota(Rota rota)</Member>
+        <Member type="Method">protected double kmTotal()</Member>
+        <Member type="Method">public void imprimirGastos()</Member>
+        <Member type="Method">public abstract double autonomiaDia()</Member>
+        <Member type="Method">public abstract void gastoDiario()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Rota</Name>
+        <Access>Public</Access>
+        <Location left="965" top="64" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Data data</Member>
+        <Member type="Field">double distancia</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Furgao</Name>
+        <Access>Public</Access>
+        <Location left="746" top="444" />
+        <Size width="210" height="130" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void NewMethod(int x, string y)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Caminhao</Name>
+        <Access>Public</Access>
+        <Location left="989" top="444" />
+        <Size width="210" height="130" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void NewMethod(int x, string y)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Van</Name>
+        <Access>Public</Access>
+        <Location left="441" top="444" />
+        <Size width="210" height="119" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void NewMethod(int x, string y)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Frota</Name>
+        <Access>Public</Access>
+        <Location left="326" top="64" />
+        <Size width="174" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Arraylist&lt;Veiculo&gt; veiculos</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="6" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="1" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+      </Relationship>
+      <Relationship type="Generalization" first="0" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="5" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="4" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="3" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
